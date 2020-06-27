@@ -16,7 +16,7 @@ class TutorialsViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    collectionView!.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+    collectionView!.contentInset = UIEdgeInsets(top: 50, left: 0, bottom: 50, right: 0)
     
     let layout = TimbreLayout()
     layout.itemSize = CGSize(width: collectionView!.bounds.width, height: 140)
