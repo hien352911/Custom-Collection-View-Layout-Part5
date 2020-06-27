@@ -11,7 +11,6 @@ import UIKit
 class TutorialsViewController: UICollectionViewController {
   
   let tutorials = Tutorial.allTutorials()
-  let palette = UIColor.palette()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -36,7 +35,6 @@ extension TutorialsViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TutorialCell", for: indexPath) as! TutorialCell
         cell.tutorial = tutorials[indexPath.item]
-        cell.contentView.backgroundColor = palette[indexPath.item]
         return cell
     }
   

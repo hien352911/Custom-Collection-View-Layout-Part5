@@ -10,6 +10,7 @@ import UIKit
 
 class TutorialCell: UICollectionViewCell {
   
+    @IBOutlet private weak var imageView: UIImageView!
   @IBOutlet private weak var titleLabel: UILabel!
   @IBOutlet private weak var timeAndRoomLabel: UILabel!
   @IBOutlet private weak var speakerLabel: UILabel!
@@ -17,6 +18,7 @@ class TutorialCell: UICollectionViewCell {
   var tutorial: Tutorial? {
     didSet {
       if let tutorial = tutorial {
+        imageView.image = tutorial.backgroundImage
         titleLabel.text = tutorial.title
         timeAndRoomLabel.text = tutorial.timeAndRoom
         speakerLabel.text = tutorial.speaker
