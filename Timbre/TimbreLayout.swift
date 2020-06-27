@@ -14,7 +14,11 @@ func degressToRadians(degress: Double) -> CGFloat {
 
 class TimbreLayout: UICollectionViewFlowLayout {
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        var layoutAttributes = super.layoutAttributesForElements(in: rect)!
+        var layoutAttributes = [UICollectionViewLayoutAttributes]()
+        for object in super.layoutAttributesForElements(in: rect)! {
+            layoutAttributes.append(object.copy() as! UICollectionViewLayoutAttributes)
+        }
+        
         for attribues in layoutAttributes {
             // Fix cell ko bị tràn ra ngoài collection view
             attribues.frame = attribues.frame.insetBy(dx: 12, dy: 0)
