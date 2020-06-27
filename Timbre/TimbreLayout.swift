@@ -16,6 +16,8 @@ class TimbreLayout: UICollectionViewFlowLayout {
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         var layoutAttributes = super.layoutAttributesForElements(in: rect)!
         for attribues in layoutAttributes {
+            // Fix cell ko bị tràn ra ngoài collection view
+            attribues.frame = attribues.frame.insetBy(dx: 12, dy: 0)
             attribues.transform = CGAffineTransform(rotationAngle: degressToRadians(degress: -14))
         }
         
