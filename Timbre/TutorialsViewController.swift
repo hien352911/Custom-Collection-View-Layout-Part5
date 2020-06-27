@@ -20,6 +20,8 @@ class TutorialsViewController: UICollectionViewController {
     
     let layout = TimbreLayout()
     layout.itemSize = CGSize(width: collectionView!.bounds.width, height: 140)
+    layout.minimumLineSpacing = 16
+    
     collectionView.collectionViewLayout = layout
   }
   
