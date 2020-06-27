@@ -38,12 +38,28 @@
                                                         <constraint firstAttribute="height" constant="200" id="vsD-tM-Ohp"/>
                                                     </constraints>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hN6-7A-NEf" customClass="GradientView" customModule="Timbre" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                            <color key="value" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="hN6-7A-NEf" secondAttribute="trailing" id="041-zN-tW8"/>
                                                 <constraint firstItem="Rdg-Hf-QnD" firstAttribute="centerY" secondItem="SWQ-tE-6wh" secondAttribute="centerY" id="2xJ-GA-mbb"/>
+                                                <constraint firstItem="hN6-7A-NEf" firstAttribute="leading" secondItem="SWQ-tE-6wh" secondAttribute="leading" id="D63-xX-X7o"/>
+                                                <constraint firstAttribute="bottom" secondItem="hN6-7A-NEf" secondAttribute="bottom" id="Eku-Um-jB9"/>
                                                 <constraint firstAttribute="trailing" secondItem="Rdg-Hf-QnD" secondAttribute="trailing" id="JY0-iS-T67"/>
                                                 <constraint firstItem="Rdg-Hf-QnD" firstAttribute="leading" secondItem="SWQ-tE-6wh" secondAttribute="leading" id="TJh-cs-sk3"/>
+                                                <constraint firstItem="hN6-7A-NEf" firstAttribute="top" secondItem="SWQ-tE-6wh" secondAttribute="top" id="i3V-0M-gB9"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVn-b4-5C2">

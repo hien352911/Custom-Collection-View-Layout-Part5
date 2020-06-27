@@ -31,4 +31,10 @@ class TutorialCell: UICollectionViewCell {
         
         imageView.transform = CGAffineTransform(rotationAngle: degreesToRadians(degrees: 14))
     }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        clipsToBounds = false
+    }
 }
