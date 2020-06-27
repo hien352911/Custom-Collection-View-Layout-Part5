@@ -29,9 +29,23 @@
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-Hf-QnD">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                        </imageView>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWQ-tE-6wh" userLabel="Container View">
+                                            <rect key="frame" x="-40" y="0.0" width="280" height="200"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-Hf-QnD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="vsD-tM-Ohp"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Rdg-Hf-QnD" firstAttribute="centerY" secondItem="SWQ-tE-6wh" secondAttribute="centerY" id="2xJ-GA-mbb"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rdg-Hf-QnD" secondAttribute="trailing" id="JY0-iS-T67"/>
+                                                <constraint firstItem="Rdg-Hf-QnD" firstAttribute="leading" secondItem="SWQ-tE-6wh" secondAttribute="leading" id="TJh-cs-sk3"/>
+                                            </constraints>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVn-b4-5C2">
                                             <rect key="frame" x="10" y="10" width="180" height="33"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
@@ -64,14 +78,14 @@
                                     <constraint firstItem="iVn-b4-5C2" firstAttribute="top" secondItem="Rod-S0-ksF" secondAttribute="top" constant="10" id="A9m-nh-8qY"/>
                                     <constraint firstItem="WQD-08-CUm" firstAttribute="leading" secondItem="Rod-S0-ksF" secondAttribute="leading" constant="10" id="BRU-Cl-I1p"/>
                                     <constraint firstItem="25Y-Qj-IFl" firstAttribute="leading" secondItem="Rod-S0-ksF" secondAttribute="leading" constant="10" id="Dat-j6-D1g"/>
-                                    <constraint firstAttribute="trailing" secondItem="Rdg-Hf-QnD" secondAttribute="trailing" id="FEa-sd-AOq"/>
-                                    <constraint firstItem="Rdg-Hf-QnD" firstAttribute="leading" secondItem="Rod-S0-ksF" secondAttribute="leading" id="FeE-Pv-UE3"/>
                                     <constraint firstAttribute="trailing" secondItem="iVn-b4-5C2" secondAttribute="trailing" constant="10" id="GER-N6-KoA"/>
                                     <constraint firstAttribute="bottom" secondItem="25Y-Qj-IFl" secondAttribute="bottom" constant="10" id="GgB-cw-hi6"/>
                                     <constraint firstAttribute="trailing" secondItem="25Y-Qj-IFl" secondAttribute="trailing" constant="10" id="Q3a-xp-sKj"/>
                                     <constraint firstAttribute="trailing" secondItem="WQD-08-CUm" secondAttribute="trailing" constant="10" id="Ti4-SJ-VdW"/>
-                                    <constraint firstAttribute="bottom" secondItem="Rdg-Hf-QnD" secondAttribute="bottom" id="kqG-X9-Jbi"/>
-                                    <constraint firstItem="Rdg-Hf-QnD" firstAttribute="top" secondItem="Rod-S0-ksF" secondAttribute="top" id="rjY-f7-c29"/>
+                                    <constraint firstItem="SWQ-tE-6wh" firstAttribute="top" secondItem="Rod-S0-ksF" secondAttribute="top" id="YGP-4U-y19"/>
+                                    <constraint firstItem="SWQ-tE-6wh" firstAttribute="leading" secondItem="Rod-S0-ksF" secondAttribute="leading" constant="-40" id="l5N-zL-IU1"/>
+                                    <constraint firstAttribute="trailing" secondItem="SWQ-tE-6wh" secondAttribute="trailing" constant="-40" id="nhn-DU-kGd"/>
+                                    <constraint firstAttribute="bottom" secondItem="SWQ-tE-6wh" secondAttribute="bottom" id="paY-yc-4lE"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="Rdg-Hf-QnD" id="Ml4-5n-wac"/>
