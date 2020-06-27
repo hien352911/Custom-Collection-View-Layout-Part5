@@ -8,8 +8,8 @@
 
 import UIKit
 
-func degressToRadians(degress: Double) -> CGFloat {
-    return CGFloat(Double.pi * (degress / 180.0))
+func degreesToRadians(degrees: Double) -> CGFloat {
+    return CGFloat(Double.pi * (degrees / 180.0))
 }
 
 class TimbreLayout: UICollectionViewFlowLayout {
@@ -22,7 +22,7 @@ class TimbreLayout: UICollectionViewFlowLayout {
         for attribues in layoutAttributes {
             // Fix cell ko bị tràn ra ngoài collection view
             attribues.frame = attribues.frame.insetBy(dx: 12, dy: 0)
-            attribues.transform = CGAffineTransform(rotationAngle: degressToRadians(degress: -14))
+            attribues.transform = CGAffineTransform(rotationAngle: degreesToRadians(degrees: -14))
         }
         
         return layoutAttributes

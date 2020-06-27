@@ -26,4 +26,9 @@ class TutorialCell: UICollectionViewCell {
     }
   }
   
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
+        
+        imageView.transform = CGAffineTransform(rotationAngle: degreesToRadians(degrees: 14))
+    }
 }
