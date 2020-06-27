@@ -105,6 +105,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="Rdg-Hf-QnD" id="Ml4-5n-wac"/>
+                                    <outlet property="imageViewCenterYLayoutConstraint" destination="2xJ-GA-mbb" id="BvH-uM-mle"/>
                                     <outlet property="speakerLabel" destination="25Y-Qj-IFl" id="sGe-vi-9ni"/>
                                     <outlet property="timeAndRoomLabel" destination="WQD-08-CUm" id="QUk-Jb-gKQ"/>
                                     <outlet property="titleLabel" destination="iVn-b4-5C2" id="RaQ-Mk-dLC"/>

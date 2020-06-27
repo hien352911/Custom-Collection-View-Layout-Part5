@@ -39,3 +39,14 @@ extension TutorialsViewController {
     }
   
 }
+
+extension TutorialsViewController {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let cells = collectionView!.visibleCells as! [TutorialCell]
+        // Với collection view (hay scroll view nói chung), thì khi scroll, bounds thay đổi, frame ko đổi
+        let bounds = collectionView!.bounds
+        for cell in cells {
+            cell.updateParallaxOffset(collectionViewBounds: bounds)
+        }
+    }
+}
