@@ -35,6 +35,7 @@ extension TutorialsViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TutorialCell", for: indexPath) as! TutorialCell
         cell.tutorial = tutorials[indexPath.item]
+        cell.updateParallaxOffset(collectionViewBounds: collectionView.bounds)
         return cell
     }
   
