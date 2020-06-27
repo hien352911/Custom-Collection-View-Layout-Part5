@@ -11,6 +11,7 @@
 		2EB2BE9424A7094A003D89E4 /* CCVL11-Timbre-Cell-Transform-Challenge-F.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB2BE9224A7094A003D89E4 /* CCVL11-Timbre-Cell-Transform-Challenge-F.pdf */; };
 		2EB2BE9824A7347D003D89E4 /* CCVL12-Timbre-View-Clipping-LectureSlides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB2BE9624A7347D003D89E4 /* CCVL12-Timbre-View-Clipping-LectureSlides.pdf */; };
 		2EB2BE9924A7347D003D89E4 /* CCVL12-Timbre-View-Clipping-Challenge-G.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB2BE9724A7347D003D89E4 /* CCVL12-Timbre-View-Clipping-Challenge-G.pdf */; };
+		2EB2BE9C24A73959003D89E4 /* CCVL13-Timbre-Parallax-Effect-LectureSlides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB2BE9B24A73959003D89E4 /* CCVL13-Timbre-Parallax-Effect-LectureSlides.pdf */; };
 		7B7B5F081ABC68BF005BDA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B5F071ABC68BF005BDA81 /* AppDelegate.swift */; };
 		7B7B5F0D1ABC68BF005BDA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7B5F0B1ABC68BF005BDA81 /* Main.storyboard */; };
 		7B7B5F0F1ABC68BF005BDA81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7B5F0E1ABC68BF005BDA81 /* Images.xcassets */; };
@@ -32,6 +33,7 @@
 		2EB2BE9224A7094A003D89E4 /* CCVL11-Timbre-Cell-Transform-Challenge-F.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL11-Timbre-Cell-Transform-Challenge-F.pdf"; sourceTree = "<group>"; };
 		2EB2BE9624A7347D003D89E4 /* CCVL12-Timbre-View-Clipping-LectureSlides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL12-Timbre-View-Clipping-LectureSlides.pdf"; sourceTree = "<group>"; };
 		2EB2BE9724A7347D003D89E4 /* CCVL12-Timbre-View-Clipping-Challenge-G.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL12-Timbre-View-Clipping-Challenge-G.pdf"; sourceTree = "<group>"; };
+		2EB2BE9B24A73959003D89E4 /* CCVL13-Timbre-Parallax-Effect-LectureSlides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL13-Timbre-Parallax-Effect-LectureSlides.pdf"; sourceTree = "<group>"; };
 		7B7B5F021ABC68BF005BDA81 /* Timbre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timbre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7B5F061ABC68BF005BDA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B7B5F071ABC68BF005BDA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		2EB2BE8F24A70919003D89E4 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				2EB2BE9A24A73947003D89E4 /* 14.Timbre – Parallax Effect */,
 				2EB2BE9524A7346D003D89E4 /* 13.Timbre – View Clipping */,
 				2EB2BE9024A70936003D89E4 /* 12.Timbre – Cell Transform */,
 			);
@@ -86,6 +89,14 @@
 				2EB2BE9624A7347D003D89E4 /* CCVL12-Timbre-View-Clipping-LectureSlides.pdf */,
 			);
 			name = "13.Timbre – View Clipping";
+			sourceTree = "<group>";
+		};
+		2EB2BE9A24A73947003D89E4 /* 14.Timbre – Parallax Effect */ = {
+			isa = PBXGroup;
+			children = (
+				2EB2BE9B24A73959003D89E4 /* CCVL13-Timbre-Parallax-Effect-LectureSlides.pdf */,
+			);
+			name = "14.Timbre – Parallax Effect";
 			sourceTree = "<group>";
 		};
 		7B7B5EF91ABC68BF005BDA81 = {
@@ -261,6 +272,7 @@
 				7B7B5F311ABC69EF005BDA81 /* Tutorials.plist in Resources */,
 				2EB2BE9424A7094A003D89E4 /* CCVL11-Timbre-Cell-Transform-Challenge-F.pdf in Resources */,
 				2EB2BE9324A7094A003D89E4 /* CCVL11-Timbre-Cell-Transform-LectureSlides.pdf in Resources */,
+				2EB2BE9C24A73959003D89E4 /* CCVL13-Timbre-Parallax-Effect-LectureSlides.pdf in Resources */,
 				7B7B5F321ABC69EF005BDA81 /* Tutorials.xcassets in Resources */,
 				7B7B5F0D1ABC68BF005BDA81 /* Main.storyboard in Resources */,
 				2EB2BE9924A7347D003D89E4 /* CCVL12-Timbre-View-Clipping-Challenge-G.pdf in Resources */,
